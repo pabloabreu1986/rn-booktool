@@ -1,79 +1,43 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Proyecto [**React Native**](https://reactnative.dev) usando [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Preparar el ambiente local
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Nota**: Completar las [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instrucciones hasta el paso "Crear una nueva aplicación", antes de continuar.
 
-## Step 1: Start the Metro Server
+## Levantar Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+Para iniciar Metro, ejecute el siguiente comando desde la _raíz_ del proyecto:
 
 ```bash
-# using npm
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Start your Application
+## Levantar la App
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Deje que Metro Bundler se ejecute en su propia terminal. Abra una _nueva_ terminal desde la _raíz_ del proyecto. Ejecute el siguiente comando para iniciar su aplicación _Android_ o _iOS_:
 
-### For Android
+### Para Android
 
 ```bash
-# using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### For iOS
+### Para iOS
 
 ```bash
-# using npm
-npm run ios
+npx npx pod-install ios
 
-# OR using Yarn
-yarn ios
+npm run ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Si todo está configurado _correctamente_, debería ver su nueva aplicación ejecutándose en su _Emulador de Android_ o _Simulador de iOS_ en breve, siempre que haya configurado su emulador/simulador correctamente.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Esta es una forma de ejecutar su aplicación; también puede ejecutarla directamente desde Android Studio y Xcode respectivamente.
 
-## Step 3: Modifying your App
+### Algunos TODOs
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Implementar manejo global de errores
+- Realizar las pruebas unitarias
+- Añadir login usando Firebase
+- Notificación de nuevos libros
+- Actualización dinámica de la lista
