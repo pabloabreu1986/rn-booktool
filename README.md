@@ -4,6 +4,18 @@ Proyecto [**React Native**](https://reactnative.dev) usando [`@react-native-comm
 
 > **Nota**: Completar las [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instrucciones hasta el paso "Crear una nueva aplicación", antes de continuar.
 
+## Preparar .env
+
+- Copiar y pegar el archivo `.env.example`
+- Renombrar a `.env`
+- En en el archivo `.env`, definir la variable `BOOKS_API_URL` con el valor devuelto en consola por `ngrok` en _"Forwarding"_ seguido del la ruta `/books`
+- Quedaría definida en el `.env` de la siguiente manera:
+
+```bash
+# BOOKSAPI
+  BOOKS_API_URL=https://cadena-de-ngrok-mostrada-en-consola.ngrok-free.app/books
+```
+
 ## Levantar Metro Server
 
 Para iniciar Metro, ejecute el siguiente comando desde la _raíz_ del proyecto:
@@ -36,6 +48,7 @@ Esta es una forma de ejecutar su aplicación; también puede ejecutarla directam
 
 ### Algunos TODOs
 
+- Separar ambientes en archivos: `.env.development | .env.production `
 - Implementar manejo global de errores
 - Realizar las pruebas unitarias
 - Añadir login usando Firebase
